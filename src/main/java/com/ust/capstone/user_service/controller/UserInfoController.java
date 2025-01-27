@@ -28,35 +28,6 @@ public class UserInfoController {
     @Autowired
     UserInfoService userInfoService;
 
-    // @GetMapping("/users")
-    // public ResponseEntity<List<UserInfoEntity>> getAlUsers(){
-    //     return new ResponseEntity<List<UserInfoEntity>>(userInfoService.getAllUsers(),HttpStatus.OK);
-    // }
-
-    // @GetMapping("/users/{username}")
-    // public ResponseEntity<UserInfoEntity> getUserByUsername(@PathVariable String username){
-    //     return new ResponseEntity<UserInfoEntity>(userInfoService.getUserByUsername(username), HttpStatus.OK);
-    // }
-
-    // @PostMapping("/users")
-    // public ResponseEntity<UserInfoEntity> addUser(@RequestBody UserInfoEntity userInfoEntity){
-    //     return new ResponseEntity<UserInfoEntity>(userInfoService.addUser(userInfoEntity), HttpStatus.OK);
-    // }
-
-    // @GetMapping("/users/roles")
-    // public ResponseEntity<List<Map<String, Object>>> getAllUsersWithRoles() {
-    //     return ResponseEntity.ok(userInfoService.getAllUsersWithRoles());
-    // }
-
-    // @GetMapping("/users/roles/{id}")
-    // public ResponseEntity<Map<String, Object>> getUserWithRole(@PathVariable int id) {
-    //     Map<String, Object> userWithRole = userInfoService.getUserWithRole(id);
-    //     if (userWithRole == null) {
-    //         return ResponseEntity.notFound().build();
-    //     }
-    //     return ResponseEntity.ok(userWithRole);
-    // }
-
     @Autowired
 	JwtService jwtService;
 
